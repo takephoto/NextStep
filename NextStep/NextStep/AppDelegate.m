@@ -17,6 +17,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"你有一条新消息，请注意查收。" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil] ;
+    [alert show] ;
     return YES;
 }
 
